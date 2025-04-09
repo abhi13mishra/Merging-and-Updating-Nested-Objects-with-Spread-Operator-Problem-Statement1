@@ -1,0 +1,15 @@
+<script>
+    const profile = { name: "Charlie", age: 29, address: { city: "San Francisco", zipcode: "94101" } };
+
+const updates = { age: 30, address: { zipcode: "94109", country: "USA" } };
+
+let {name} = profile;
+let {age} = updates;
+
+let obj1 = {name,age};
+let address = {...profile.address, ...updates.address};
+
+let res = {...obj1, address}
+
+console.log(res);
+</script>
